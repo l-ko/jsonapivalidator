@@ -1,0 +1,14 @@
+createSmth:
+  type: object
+  required: ['id', 'attributes']
+  properties:
+    id:
+      type: objectId
+    attributes:
+      type: object
+      properties:
+        name:
+          type: string
+        size:
+          type: number
+          maximum: 150
