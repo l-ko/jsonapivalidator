@@ -1,4 +1,4 @@
-# JRV
+# jsonreqvalidator
 
 Validates JSON requests against provided API schema. Uses OpenAPI schema definition format. Returns an array of error objects with pointers.
 
