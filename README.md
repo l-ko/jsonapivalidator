@@ -6,27 +6,34 @@ This can be used if you want a requests validation mechanism similar to OpenAPI,
 
 Supports ObjectId type.
 
+## Example
+Following example uses API definition with a single defined operation 'createSmth'. 
+When the module is loaded it provides an object with a 'createSmth' property, which is a function from request. 
+More operations you have, more properties will be attached to a validator object, which can be further utilized in a single manner. 
+
 ```
 var APISchema = {
-  type: 'object',
-  required: ['id', 'attributes'],
-  properties: {
-    id: {
-      type: 'objectId'
-    },
-    attributes: {
+    createSmth: { // Operation name
       type: 'object',
+      required: ['id', 'attributes'],
       properties: {
-        name: {
-          type: 'string'
+        id: {
+          type: 'objectId'
         },
-        size: {
-          type: 'number',
-          maximum: 150
+        attributes: {
+          type: 'object',
+          properties: {
+            name: {
+              type: 'string'
+            },
+            size: {
+              type: 'number',
+              maximum: 150
+            }
+          }
         }
       }
     }
-  }
 };
 
 // Load validator
