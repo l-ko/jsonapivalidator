@@ -1,6 +1,6 @@
 {
   "name": "jsonreqvalidator",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Validates JSON requests against API schema",
   "main": "src/main.js",
   "dependencies": {
@@ -8,6 +8,7 @@
     "mongodb-objectid-helper": "^1.0.1"
   },
   "devDependencies": {
-    "js-yaml": "^3.6.1"
+    "js-yaml": "^3.6.1",
+    "should": "^11.1.0"
   }
 }
