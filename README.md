@@ -2,7 +2,7 @@
 
 Validates JSON requests against provided API schema. Returns an array of error objects with pointers.
 
-Generally, this module derived from an inability to effectively validate JSON requests received by micro service over MQTT instead of HTTP.
+This module has derived from an inability to effectively validate JSON requests received over MQTT instead of HTTP.
 So there was a need for validation mechanism similar to one provided by OpenAPI tools.
 
 Supports ObjectId type.
