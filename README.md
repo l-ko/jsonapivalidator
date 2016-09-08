@@ -9,8 +9,10 @@ Supports ObjectId type.
 ## Warning
 1) Schema is not validated itself on module load at the moment.
 
-2) Not all of the OpenAPI schema definition features are implemented. 
-It understands objects, arrays, minimum/maximum, exclusiveMinimum/exclusiveMaximum though.
+2) Not all of the schema definition features are implemented. 
+It understands objects, arrays, minItems, minimum/maximum, exclusiveMinimum/exclusiveMaximum though.
+
+Check out the test folder. It should contain a test for every supported feature.
 
 ## Example
 Following example uses API definition with a single defined operation 'createSmth'. 
@@ -18,7 +20,7 @@ When the module is loaded it provides an object with a 'createSmth' property, wh
 More operations you have, more properties will be attached to a validator object, which can be further utilized in a single manner. 
 
 ```
-var APISchema = {
+let APISchema = {
     createSmth: { // Operation name
       type: 'object',
       required: ['id', 'attributes'],
