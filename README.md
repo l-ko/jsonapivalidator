@@ -1,8 +1,9 @@
 ## Overview
 
-Validates JSON requests against provided API schema. Uses OpenAPI schema definition format. Returns an array of error objects with pointers.
+Validates JSON requests against provided API schema. Returns an array of error objects with pointers.
 
-This can be used if you want a requests validation mechanism similar to OpenAPI, but don't want to install their tools for some reason.
+Generally, this module derived from an inability to effectively validate JSON requests received by micro service over MQTT instead of HTTP.
+So there was a need for validation mechanism similar to one provided by OpenAPI tools.
 
 Supports ObjectId type.
 
