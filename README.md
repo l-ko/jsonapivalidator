@@ -9,8 +9,8 @@ Supports ObjectId type.
 ## Warning
 1) Schema is not validated itself on module load at the moment.
 
-2) Not all OpenAPI schema definition features are implemented. 
-It understands objects, arrays, minimum/maximum, exclusiveMinimum/exclusiveMaximum.
+2) Not all of the OpenAPI schema definition features are implemented. 
+It understands objects, arrays, minimum/maximum, exclusiveMinimum/exclusiveMaximum though.
 
 ## Example
 Following example uses API definition with a single defined operation 'createSmth'. 
