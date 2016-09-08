@@ -6,6 +6,11 @@ This can be used if you want a requests validation mechanism similar to OpenAPI,
 
 Supports ObjectId type.
 
+## Warning
+1) Schema is not validated itself on module load at the moment.
+2) Not all OpenAPI schema definition features are implemented. 
+It understands objects, arrays, minimum/maximum, exclusiveMinimum/exclusiveMaximum.
+
 ## Example
 Following example uses API definition with a single defined operation 'createSmth'. 
 When the module is loaded it provides an object with a 'createSmth' property, which is a function from request. 
