@@ -1,3 +1,5 @@
+This is an experimental module. It was written prior to realizing that we already have robust solutions in place based on http://json-schema.org/
+
 ## Overview
 
 Validates JSON requests against provided API schema. Returns an array of error objects with pointers.
